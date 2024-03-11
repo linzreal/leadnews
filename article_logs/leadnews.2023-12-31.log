@@ -1,0 +1,32 @@
+2023-12-31 21:44:02.678 [SpringContextShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1542af63, started on Fri Dec 29 21:41:51 CST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6ca0256d
+2023-12-31 21:44:02.670 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-12-31 21:44:02.670 [Thread-16] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-12-31 21:44:02.683 [Thread-16] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-12-31 21:44:02.687 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-12-31 21:44:02.822 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-12-31 21:44:02.835 [SpringContextShutdownHook] INFO  o.s.j.e.a.AnnotationMBeanExporter - Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2023-12-31 21:44:02.837 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-12-31 21:44:02.838 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@leadnews-article:192.168.200.1:51802 from beat map.
+2023-12-31 21:44:02.838 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@leadnews-article with instance: Instance{instanceId='null', ip='192.168.200.1', port=51802, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-12-31 21:44:02.839 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-12-31 21:44:02.841 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-12-31 21:44:03.841 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - received push data: {"type":"dom","data":"{\"metadata\":{},\"dom\":\"DEFAULT_GROUP@@leadnews-article\",\"cacheMillis\":10000,\"useSpecifiedURL\":false,\"hosts\":[],\"name\":\"DEFAULT_GROUP@@leadnews-article\",\"checksum\":\"62b51a25b38c87de7d41fb26f6a3ef78\",\"lastRefTime\":1704030228121,\"env\":\"\",\"clusters\":\"DEFAULT\"}","lastRefTime":259781454665023} from /192.168.1.171
+2023-12-31 21:44:03.844 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article@@DEFAULT -> [{"instanceId":"192.168.200.1#51802#DEFAULT#DEFAULT_GROUP@@leadnews-article","ip":"192.168.200.1","port":51802,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+2023-12-31 21:44:03.852 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article@@DEFAULT -> []
+2023-12-31 21:44:05.865 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-12-31 21:44:05.865 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-12-31 21:44:06.460 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-12-31 21:44:09.482 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-12-31 21:44:09.482 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-12-31 21:44:09.482 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-12-31 21:44:09.483 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-12-31 21:44:09.483 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-12-31 21:44:09.483 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-12-31 21:44:09.483 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-12-31 21:44:09.483 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-12-31 21:44:09.483 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+2023-12-31 21:44:09.483 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-12-31 21:44:09.484 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-12-31 21:44:09.484 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-31 21:44:09.543 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-12-31 21:44:09.546 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,30 @@
+2024-02-15 00:47:58.242 [SpringContextShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42435b98, started on Tue Feb 13 00:11:28 CST 2024, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7a7471ce
+2024-02-15 00:47:58.230 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-02-15 00:47:58.233 [Thread-16] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-02-15 00:47:58.251 [Thread-16] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-02-15 00:47:58.255 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-02-15 00:47:58.464 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2024-02-15 00:47:58.484 [SpringContextShutdownHook] INFO  o.s.j.e.a.AnnotationMBeanExporter - Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2024-02-15 00:47:58.487 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-02-15 00:47:58.487 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@leadnews-user:192.168.200.1:51801 from beat map.
+2024-02-15 00:47:58.488 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@leadnews-user with instance: Instance{instanceId='null', ip='192.168.200.1', port=51801, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2024-02-15 00:47:58.492 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2024-02-15 00:47:58.493 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2024-02-15 00:47:59.496 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - received push data: {"type":"dom","data":"{\"metadata\":{},\"dom\":\"DEFAULT_GROUP@@leadnews-user\",\"cacheMillis\":10000,\"useSpecifiedURL\":false,\"hosts\":[],\"name\":\"DEFAULT_GROUP@@leadnews-user\",\"checksum\":\"c38ca5dc04ccda8a83dcc1f1c8d63167\",\"lastRefTime\":1707929271383,\"env\":\"\",\"clusters\":\"DEFAULT\"}","lastRefTime":180998275036701} from /192.168.1.171
+2024-02-15 00:47:59.502 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-user@@DEFAULT -> [{"instanceId":"192.168.200.1#51801#DEFAULT#DEFAULT_GROUP@@leadnews-user","ip":"192.168.200.1","port":51801,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2024-02-15 00:47:59.509 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-user@@DEFAULT -> []
+2024-02-15 00:48:00.576 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2024-02-15 00:48:00.577 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2024-02-15 00:48:03.607 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2024-02-15 00:48:06.634 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2024-02-15 00:48:06.635 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2024-02-15 00:48:06.636 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2024-02-15 00:48:06.637 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2024-02-15 00:48:06.637 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2024-02-15 00:48:06.639 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-02-15 00:48:06.639 [SpringContextShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2024-02-15 00:48:06.640 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2024-02-15 00:48:06.640 [SpringContextShutdownHook] INFO  c.a.n.c.identify.CredentialService - [null] CredentialService is freed
+2024-02-15 00:48:06.640 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2024-02-15 00:48:06.643 [SpringContextShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2024-02-15 00:48:06.644 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
